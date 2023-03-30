@@ -9,23 +9,16 @@ class Solution:
         maxLength = 0
         result = []
         
-        if len(l1) > len(l2):
-            maxLength = len(l2)
-        else if len(l2) < len(l1):
-            maxLength = len(l1)
-        else:
-            maxLength = 
+        # if len(l1) > len(l2):
+        #     maxLength = len(l2)
+        # elif len(l2) < len(l1):
+        #     maxLength = len(l1)
+        # else:
+        #     maxLength = len(l1)
             
-        
         carry = 0
-            
-        while l1 != None or l2 != None:
-            digitSum = l1 + l2 + carry
-            if digitSum > 9:
-                carry = 1
-                result[i] = ListNode(digitSum % 10)
-            else:
-                result[i] = ListNode(digitSum)
         
+        for (a, b, c) in zip(l1, l2):
+            
         
         return result                
